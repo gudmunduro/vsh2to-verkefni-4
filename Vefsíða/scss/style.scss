@@ -32,7 +32,7 @@ body{
         color: white;
         font-family: Verdana;
         transition: background-color 0.3s;
-        &hover{
+        &:hover{
             background-color: #0D47A1;
         }
     }
@@ -155,7 +155,7 @@ footer{
         display: inline-block;
         margin: -2px;
         width: 60px;
-        &hover{
+        &:hover{
             width: 80px;
         }
         @media screen and (min-width: 64em){
@@ -163,7 +163,7 @@ footer{
             width: 40px;
             padding: 5px 10px;
             margin: initial;
-            &hover{
+            &:hover{
                 width: 60px;
             }
         }
@@ -173,25 +173,25 @@ footer{
     }
     .a{
         background-color: #CDDC39;
-        &hover{
+        &:hover{
             background-color: #827717;
         }
     }
     .b{
         background-color: #673AB7;
-        &hover{
+        &:hover{
             background-color: #311B92;
         }
     }
     .c{
         background-color: #FF5722;
-        &hover{
+        &:hover{
             background-color: #BF360C;
         }
     }
     .d{
         background-color: #E91E63;
-        &hover{
+        &:hover{
             background-color: #880E4F;
         }
     }
@@ -234,10 +234,10 @@ footer{
         color: white;
         transition: background-color 0.3s;
         width: 100vw;
-        &hover{
+        &:hover{
             background-color: #1565C0;
         }
-        &active{
+        &:active{
             background-color: black;
         }
     }
@@ -263,10 +263,10 @@ input:checked ~ .mobileMenu{
     color: white;
     box-shadow: 5px 5px 5px gray;
     transition: background-color 0.3s;
-    &hover{
+    &:hover{
         background-color: #1565C0;
     }
-    &active{
+    &:active{
         background-color: black;
     }
     @media screen and (min-width: 48em){

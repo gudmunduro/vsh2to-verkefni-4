@@ -29,7 +29,7 @@ body {
     color: white;
     font-family: Verdana;
     transition: background-color 0.3s; }
-    .menu ahover {
+    .menu a:hover {
       background-color: #0D47A1; }
   @media screen and (min-width: 48em) {
     .menu {
@@ -141,7 +141,7 @@ footer {
     display: inline-block;
     margin: -2px;
     width: 60px; }
-    .leftMenu divhover {
+    .leftMenu div:hover {
       width: 80px; }
     @media screen and (min-width: 64em) {
       .leftMenu div {
@@ -149,25 +149,25 @@ footer {
         width: 40px;
         padding: 5px 10px;
         margin: initial; }
-        .leftMenu divhover {
+        .leftMenu div:hover {
           width: 60px; } }
   .leftMenu p {
     color: white; }
   .leftMenu .a {
     background-color: #CDDC39; }
-    .leftMenu .ahover {
+    .leftMenu .a:hover {
       background-color: #827717; }
   .leftMenu .b {
     background-color: #673AB7; }
-    .leftMenu .bhover {
+    .leftMenu .b:hover {
       background-color: #311B92; }
   .leftMenu .c {
     background-color: #FF5722; }
-    .leftMenu .chover {
+    .leftMenu .c:hover {
       background-color: #BF360C; }
   .leftMenu .d {
     background-color: #E91E63; }
-    .leftMenu .dhover {
+    .leftMenu .d:hover {
       background-color: #880E4F; }
   @media screen and (min-width: 64em) {
     .leftMenu {
@@ -203,9 +203,9 @@ footer {
     color: white;
     transition: background-color 0.3s;
     width: 100vw; }
-    .mobileMenu ahover {
+    .mobileMenu a:hover {
       background-color: #1565C0; }
-    .mobileMenu aactive {
+    .mobileMenu a:active {
       background-color: black; }
   @media screen and (min-width: 48em) {
     .mobileMenu {
@@ -227,9 +227,9 @@ input:checked ~ .mobileMenu {
   color: white;
   box-shadow: 5px 5px 5px gray;
   transition: background-color 0.3s; }
-  .mobileMenuTogglehover {
+  .mobileMenuToggle:hover {
     background-color: #1565C0; }
-  .mobileMenuToggleactive {
+  .mobileMenuToggle:active {
     background-color: black; }
   @media screen and (min-width: 48em) {
     .mobileMenuToggle {
