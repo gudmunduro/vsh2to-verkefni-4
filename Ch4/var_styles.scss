@@ -1,0 +1,23 @@
+/* 
+ * SASS Variables are defined with a $ character
+ * and can have different kinds of data types: color, string, boolean, multi-value
+ */
+
+$headerColor: red;
+$headerFont: 'Arial';
+$headerFontSize: 2.0em;
+$headerFontSizeBig: 2.5em;
+$headerBorder: solid green 1px;
+
+h1{
+    color: $headerColor;
+}
+
+.header{
+    color: $headerColor;
+    font-family: $headerFont;
+    font-size: $headerFontSize;
+    &:hover{
+        font-size: $headerFontSizeBig;
+    }
+}

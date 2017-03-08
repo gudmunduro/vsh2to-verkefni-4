@@ -1,0 +1,16 @@
+/*
+ * SASS allows style rules to be nested inside of other rules, which causes
+ * the nested rules to only apply within the outer rule's selector
+ */
+header {
+  background-color: lightgray; }
+  header h1 {
+    color: red; }
+    header h1hover {
+      color: black; }
+  header h2 {
+    border: solid red 2px; }
+    header h2:hover {
+      border: solid blue 3px; }
+
+/*# sourceMappingURL=nested_styles.css.map */

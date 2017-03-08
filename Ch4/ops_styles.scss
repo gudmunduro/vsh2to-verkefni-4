@@ -1,0 +1,15 @@
+/*
+ * SASS Operators example
+ */
+
+$margin: 15px;
+
+header{
+    h1{
+        margin: $margin / 2;
+        @if $margin == 15px
+        {
+            color: red;
+        }
+    }
+}
