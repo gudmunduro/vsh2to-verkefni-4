@@ -1,3 +1,8 @@
+@import 'normalize.scss';
+
+$menuBackgroundColor: #1E88E5;
+$menuButtonHoverColor: #0D47A1;
+
 body{
     display: flex;
     flex-flow: column wrap;
@@ -20,7 +25,7 @@ body{
         margin: 0 auto;
         list-style: none;
         text-align: center;
-        background-color: #1E88E5;
+        background-color: $menuBackgroundColor;
     }
     li{
         display: inline;
@@ -33,7 +38,7 @@ body{
         font-family: Verdana;
         transition: background-color 0.3s;
         &:hover{
-            background-color: #0D47A1;
+            background-color: $menuButtonHoverColor;
         }
     }
     @media screen and (min-width: 48em){
@@ -211,7 +216,7 @@ footer{
 .mobileMenu{
    display: block;
    position: fixed;
-   background-color: #2196F3;
+   background-color: $menuBackgroundColor;
    width: 100vw;
    left: 0;
    bottom: 28px;
@@ -235,7 +240,7 @@ footer{
         transition: background-color 0.3s;
         width: 100vw;
         &:hover{
-            background-color: #1565C0;
+            background-color: $menuButtonHoverColor;
         }
         &:active{
             background-color: black;
@@ -256,7 +261,7 @@ input:checked ~ .mobileMenu{
     left: 0;
     bottom: 0;
     width: 100vw;
-    background-color: #2196F3;
+    background-color: $menuBackgroundColor;
     text-align: center;
     font-family: Verdana;
     font-size: 1.5em;
@@ -264,7 +269,7 @@ input:checked ~ .mobileMenu{
     box-shadow: 5px 5px 5px gray;
     transition: background-color 0.3s;
     &:hover{
-        background-color: #1565C0;
+        background-color: $menuButtonHoverColor;
     }
     &:active{
         background-color: black;
