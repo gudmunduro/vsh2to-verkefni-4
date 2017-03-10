@@ -385,7 +385,7 @@ body {
   display: none; }
   .menu ul {
     padding: 10px 0;
-    width: 510px;
+    width: 497px;
     margin: 0 auto;
     list-style: none;
     text-align: center;
@@ -393,7 +393,7 @@ body {
   .menu li {
     display: inline; }
   .menu a {
-    padding: 10px;
+    padding: 10px 20px;
     text-decoration: none;
     color: white;
     font-family: Verdana;
@@ -403,8 +403,10 @@ body {
   @media screen and (min-width: 48em) {
     .menu {
       display: block;
+      position: fixed;
+      left: 0;
+      top: 0;
       order: 1;
-      margin: 0 auto;
       background-color: #2196F3;
       width: 100%; } }
 
@@ -415,6 +417,7 @@ header {
   padding: 10px; }
   @media screen and (min-width: 48em) {
     header {
+      margin-top: 40px;
       order: 2; } }
 
 section {
@@ -471,25 +474,32 @@ article {
       order: 2;
       width: 50%; } }
 
-aside {
+.asideL {
   background-color: yellow;
   width: 100%;
-  padding: 10px; }
+  padding: 10px;
+  order: 2; }
   @media screen and (min-width: 37.5em) and (max-width: 48em) {
-    aside {
+    .asideL {
       width: 50%; } }
   @media screen and (min-width: 48em) {
-    aside {
+    .asideL {
       width: 25%; } }
-
-.asideL {
-  order: 2; }
   @media screen and (min-width: 48em) {
     .asideL {
       order: 1; } }
 
 .asideR {
+  background-color: yellow;
+  width: 100%;
+  padding: 10px;
   order: 3; }
+  @media screen and (min-width: 37.5em) and (max-width: 48em) {
+    .asideR {
+      width: 50%; } }
+  @media screen and (min-width: 48em) {
+    .asideR {
+      width: 25%; } }
   @media screen and (min-width: 48em) {
     .asideR {
       order: 3; } }

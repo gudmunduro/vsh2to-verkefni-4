@@ -1,5 +1,18 @@
 @import 'normalize.scss';
 
+@mixin aside{
+    background-color: yellow;
+    width: 100%;
+    padding: 10px;
+
+    @media screen and (min-width: 37.5em) and (max-width: 48em){
+        width: 50%;
+    }
+    @media screen and (min-width: 48em){
+        width: 25%;
+    }
+}
+
 $menuBackgroundColor: #1E88E5;
 $menuButtonHoverColor: #0D47A1;
 
@@ -21,7 +34,7 @@ body{
     display: none;
     ul{
         padding: 10px 0;
-        width: 510px;
+        width: 497px;
         margin: 0 auto;
         list-style: none;
         text-align: center;
@@ -31,7 +44,8 @@ body{
         display: inline;
     }
     a{
-        padding: 10px;
+        padding: 10px 10px+10px;
+        
         text-decoration: none;
         color: white;
         font-family: Verdana;
@@ -42,8 +56,10 @@ body{
     }
     @media screen and (min-width: 48em){
         display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
         order: 1;
-        margin: 0 auto;
         background-color: #2196F3;
         width: 100%;
     }
@@ -55,6 +71,7 @@ header{
     order: 1;
     padding: 10px;
     @media screen and (min-width: 48em){
+        margin-top: 40px;
         order: 2;
     }
 }
@@ -115,20 +132,8 @@ article{
     }
 }
 
-aside{
-    background-color: yellow;
-    width: 100%;
-    padding: 10px;
-
-    @media screen and (min-width: 37.5em) and (max-width: 48em){
-        width: 50%;
-    }
-    @media screen and (min-width: 48em){
-        width: 25%;
-    }
-}
-
 .asideL{
+    @include aside;
     order:2;
     @media screen and (min-width: 48em){
         order: 1;
@@ -136,6 +141,7 @@ aside{
 }
 
 .asideR{
+    @include aside;
     order:3;
     @media screen and (min-width: 48em){
         order: 3;
